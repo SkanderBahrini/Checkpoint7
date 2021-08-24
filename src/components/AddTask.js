@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { addTodoAsync } from '../redux/todoSlice';
 
-const AddTodoForm = () => {
+const AddTask = () => {
 	const [value, setValue] = useState('');
 	const dispatch = useDispatch();
 
@@ -35,4 +35,4 @@ const AddTodoForm = () => {
 	);
 };
 
-export default AddTodoForm;
+export default AddTask;

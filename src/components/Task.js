@@ -2,7 +2,7 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import { toggleCompleteAsync, deleteTodoAsync } from '../redux/todoSlice';
 
-const TodoItem = ({ id, title, completed }) => {
+const Task= ({ id, title, completed }) => {
 	const dispatch = useDispatch();
 
 	const handleCheckboxClick = () => {
@@ -33,4 +33,4 @@ const TodoItem = ({ id, title, completed }) => {
 	);
 };
 
-export default TodoItem;
+export default Task;
